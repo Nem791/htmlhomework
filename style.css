@@ -1,0 +1,407 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: block;
+}
+
+.navbar {
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    padding: 10px 0;
+    background-color: #fff;
+    min-height: 40px;
+    z-index: 1030;
+    -webkit-box-shadow: 0 0 1px 0 rgb(0 0 0 / 50%);
+    box-shadow: 0 0 1px 0 rgb(0 0 0 / 50%);
+    border: 0;
+}
+
+.navbar-container {
+    width: 1310px;
+    padding: 0;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    float: left;
+    height: 40px;
+    overflow: hidden;
+}
+
+.navbar-brand.tet {
+    height: 50px;
+    margin-top: -5px;
+}
+
+.logo {
+    display: block;
+}
+
+a {
+    color: #333;
+}
+
+.logo img {
+    height: 50px;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.navbar-header-user {
+    float: right;
+    display: flex;
+}
+
+.user-login {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-theme {
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    padding: 0;
+    line-height: 38px;
+    border-radius: 20px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    background: #eee;
+    -webkit-transition: background .3s,color .3s;
+    transition: background .3s,color .3s;
+}
+
+.navbar-left {
+    width: 847px;
+    float: left;
+}
+
+.navbar-search {
+    width: 320px;
+    position: relative;
+    float: right;
+    padding: 5px 0;
+}
+
+.search-box {
+    position: relative;
+    z-index: 2;
+}
+
+.search-box input {
+    width: 100%;
+    height: 30px;
+    display: block;
+    padding-left: 10px;
+    padding-right: 30px;
+    font-size: 13px;
+    -webkit-appearance: none;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.navbar-menu {
+    height: 40px;
+    margin-left: 40px;
+    float: left;
+}
+
+.navbar-menu-item {
+    float: left;
+    margin: 5px;
+    padding: 0 15px;
+    border-radius: 15px;
+    height: 30px;
+    line-height: 28px;
+    border: 1px solid #ccc;
+}
+
+.navbar-menu-item a {
+    display: block;
+}
+
+a, a:focus, a:hover {
+    text-decoration: none;
+}
+
+.menu-sub {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    background: #fff;
+    border-top: 1px solid #eee;
+    -webkit-box-shadow: 0 4px 5px #ccc;
+    box-shadow: 0 4px 5px #ccc;
+    display: none;
+    margin-top: -15px;
+}
+
+.menu-sub-container {
+    margin: auto;
+    width: 1310px;
+}
+
+.menu-sub-genre {
+    overflow: hidden;
+    height: 25px;
+}
+
+.navbar-menu-item a {
+    display: block;
+}
+
+.ms-genre-item {
+    float: left;
+    padding: 0 5px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+    line-height: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.menu-sub-list {
+    width: 1320px;
+}
+
+.menu-sub-item {
+    width: 155px;
+    height: 87px;
+    float: left;
+    position: relative;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.navbar-menu-item a {
+    display: block;
+}
+
+.menu-sub-item img {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+.menu-sub-item div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 5px 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #fff;
+    background: linear-gradient(transparent,rgba(0,0,0,.1),rgba(0,0,0,.3),rgba(0,0,0,.5),rgba(0,0,0,.7),rgba(0,0,0,.9));
+    -webkit-transition: color .3s;
+    transition: color .3s;
+}
+
+.navbar-menu-item:hover .menu-sub {
+    display: block;
+}
+
+.menu-sub:hover {
+    display: block;
+}
+
+.container {
+    width: 1310px;
+    position: relative;
+    margin: auto;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 1320px;
+    margin-top: 20px;
+}
+
+.slider-cover {
+    width: 980px;
+    height: 290px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    float: left;
+    background: #ccc;
+}
+
+.slider-cover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    cursor: pointer;
+}
+
+.slider-item {
+    width: 320px;
+    height: 90px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    float: left;
+    background: #ccc;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.newest-episode {
+    width: 1320px;
+    clear: both;
+    margin-top: 20px;
+    overflow: hidden;
+    display: block;
+}
+
+.title {
+    position: relative;
+    margin-bottom: 5px;
+    color: #d80f16;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.tray-title a {
+    cursor: pointer;
+}
+
+.title h1 {
+    margin: unset;
+    font: unset;
+    display: unset;
+}
+
+.content {
+    position: relative;
+    overflow: hidden;
+}
+
+.tray-item {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 320px;
+    height: 180px;
+}
+
+.tray-item-thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+.tray-item-description {
+    height: 81px;
+    padding: 30px 15px 10px;
+}
+
+.tray-item-description {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    color: #eee;
+    background: transparent;
+    background-image: linear-gradient(transparent,rgba(0,0,0,.1),rgba(0,0,0,.3),rgba(0,0,0,.5),rgba(0,0,0,.7),rgba(0,0,0,.9));
+}
+
+.tray-item-title {
+    text-align: left;
+    margin-bottom: 2px;
+    font-size: 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tray-item-meta-info {
+    font-size: 12px;
+}
+
+.tray-episode-name {
+    width: 60%;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    text-align: left;
+}
+
+.tray-episode-views {
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
