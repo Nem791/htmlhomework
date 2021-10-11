@@ -24,6 +24,7 @@ header {
     -webkit-box-shadow: 0 0 1px 0 rgb(0 0 0 / 50%);
     box-shadow: 0 0 1px 0 rgb(0 0 0 / 50%);
     border: 0;
+    position: fixed;
 }
 
 .navbar-container {
@@ -166,6 +167,7 @@ a, a:focus, a:hover {
     box-shadow: 0 4px 5px #ccc;
     display: none;
     margin-top: -15px;
+    z-index: 999;
 }
 
 .menu-sub-container {
@@ -385,7 +387,9 @@ img {
     float: right;
 }
 
-
+.navbar-menu-item:hover {
+    background-color: rgb(224, 211, 211);
+}
 
 
 
